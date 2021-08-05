@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "AdminDashboard";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+
+
+
+<h2>AdminDashboard</h2>
+
+<div>
+    Welcome ADMIN how can I help you
+    <ul>
+        <li><i class="fas fa-book-open">@Html.ActionLink("Add Course", "AddCourse", "Admin", new { area = "" }, new { @class = "btn btn-primary" })</i><br /></li>
+        <li><i class="fas fa-book-open">@Html.ActionLink("Add Subject", "AddSubject", "Admin", new { area = "" }, new { @class = "btn btn-primary" })</i><br /></li>
+        <li><i class="fas fa-book-open">@Html.ActionLink("Add Questions", "AddQuestions", "Admin", new { area = "" }, new { @class = "btn btn-primary" })</i><br /></li>
+    </ul>
+</div>
